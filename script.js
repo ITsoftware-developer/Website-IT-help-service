@@ -55,7 +55,7 @@ if (appointmentForm instanceof HTMLFormElement) {
     event.preventDefault();
 
     const formData = new FormData(appointmentForm);
-    const recipient = appointmentForm.dataset.recipient || "email@voorbeeld.nl";
+    const recipient = appointmentForm.dataset.recipient || "m_agzannay@gmail.com";
     const devices = formData.getAll("apparaten").join(", ") || "Niet ingevuld";
     const subject = "Nieuwe afspraakaanvraag voor ICT-hulp";
     const body = [
