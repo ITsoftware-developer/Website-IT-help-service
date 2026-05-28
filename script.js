@@ -24,7 +24,7 @@ if (menuButton && navigation) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .service-card, .device-card, .info-grid article, .detail-grid article, .steps li, .contact-hero-panel, .contact-step-strip article, .contact-card, .appointment-form, .form-aside, .sales-strip div, .home-cta-section"
+  ".section-heading, .service-card, .device-card, .info-grid article, .detail-grid article, .link-card, .price-card, .testimonial-card, .faq-list details, .steps li, .contact-hero-panel, .contact-step-strip article, .contact-card, .appointment-form, .form-aside, .sales-strip div, .home-cta-section"
 );
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
