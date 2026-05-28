@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Neem contact op voor ICT-beheer, IT-support, systemen, devices en advies."
+    >
+    <title>Afspraak plannen | ICT Beheer & IT Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Naar de homepage">
+        <span class="brand-mark">IT</span>
+        <span>
+          <strong>Naam Broer</strong>
+          <small>ICT-beheer & systemen</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Menu openen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="diensten.html">Diensten</a>
+        <a href="over.html">Over</a>
+        <a class="nav-cta is-active" href="contact.html">Afspraak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section contact-page">
+        <div>
+          <p class="eyebrow">Afspraak plannen</p>
+          <h1>Vertel kort waar je hulp bij nodig hebt.</h1>
+          <p>
+            Vul het formulier in. Daarna wordt er automatisch een mail voorbereid met alle gegevens,
+            zodat je broer snel kan reageren.
+          </p>
+          <div class="confidence-row" aria-label="Wat je mag verwachten">
+            <span>Gerichte hulpvraag</span>
+            <span>Sneller antwoord</span>
+            <span>Geen verplichting</span>
+          </div>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:email@voorbeeld.nl">email@voorbeeld.nl</a>
+          <a href="tel:+31600000000">06 00 00 00 00</a>
+          <span>Regio: vul plaats/regio in</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Afspraakformulier</p>
+          <h2>Vul je gegevens en het probleem in.</h2>
+          <p>Hoe duidelijker de aanvraag, hoe sneller hij kan inschatten wat er nodig is. Na versturen opent je mailprogramma met een compleet bericht.</p>
+        </div>
+        <div class="form-layout">
+          <form class="appointment-form" id="appointment-form" action="mailto:email@voorbeeld.nl" method="post" enctype="text/plain" data-recipient="email@voorbeeld.nl">
+            <div class="form-row">
+              <label>
+                Naam
+                <input type="text" name="naam" autocomplete="name" required>
+              </label>
+              <label>
+                E-mail
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Telefoonnummer
+                <input type="tel" name="telefoon" autocomplete="tel" required>
+              </label>
+              <label>
+                Plaats / regio
+                <input type="text" name="regio" autocomplete="address-level2">
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Waar gaat het over?
+                <select name="hulpsoort" required>
+                  <option value="">Kies een onderwerp</option>
+                  <option>Telefoon</option>
+                  <option>Tablet</option>
+                  <option>Laptop of pc</option>
+                  <option>Wifi of netwerk</option>
+                  <option>E-mail of account</option>
+                  <option>Printer of randapparatuur</option>
+                  <option>IT-check of advies</option>
+                </select>
+              </label>
+              <label>
+                Gewenste dag/tijd
+                <input type="text" name="moment" placeholder="Bijv. vrijdagmiddag of maandag na 18:00">
+              </label>
+            </div>
+            <fieldset>
+              <legend>Welke apparaten zijn betrokken?</legend>
+              <label><input type="checkbox" name="apparaten" value="Telefoon"> Telefoon</label>
+              <label><input type="checkbox" name="apparaten" value="Tablet"> Tablet</label>
+              <label><input type="checkbox" name="apparaten" value="Laptop"> Laptop</label>
+              <label><input type="checkbox" name="apparaten" value="Printer"> Printer</label>
+              <label><input type="checkbox" name="apparaten" value="Netwerk/wifi"> Netwerk/wifi</label>
+            </fieldset>
+            <label>
+              Beschrijf het probleem
+              <textarea name="bericht" rows="7" placeholder="Wat werkt niet? Sinds wanneer? Zie je een foutmelding?" required></textarea>
+            </label>
+            <label class="consent-line">
+              <input type="checkbox" name="akkoord" required>
+              Ik geef toestemming om contact met mij op te nemen over deze aanvraag.
+            </label>
+            <button class="button button-primary" type="submit">Verstuur aanvraag</button>
+            <p class="form-note" id="form-note">
+              Tip: vervang straks <code>email@voorbeeld.nl</code> in de bestanden door je eigen e-mailadres.
+            </p>
+          </form>
+
+          <aside class="form-aside">
+            <h3>Handig om te vermelden</h3>
+            <ul>
+              <li>Merk en model van het apparaat</li>
+              <li>Welke foutmelding je ziet</li>
+              <li>Of het probleem steeds terugkomt</li>
+              <li>Of het om thuis, werk of school gaat</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Waarvoor contact opnemen?</p>
+          <h2>Voor storingen, beheer of een frisse blik op de huidige IT.</h2>
+        </div>
+        <div class="detail-grid">
+          <article>
+            <h3>Nieuwe werkplek</h3>
+            <p>Laptop, e-mail, printer, accounts en beveiliging netjes ingericht.</p>
+          </article>
+          <article>
+            <h3>Probleem oplossen</h3>
+            <p>Hulp bij traag internet, e-mailproblemen, apparaten of software die niet meewerkt.</p>
+          </article>
+          <article>
+            <h3>IT-check</h3>
+            <p>Een praktische controle van updates, back-up, toegang en basisbeveiliging.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> Naam Broer</span>
+      <a href="index.html">Home</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
